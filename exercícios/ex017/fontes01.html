@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas  Absolutas:
+            cm, mm, in, px, pt, pc
+            (centímetro, milímetro, polegada, píxel, ponto, paica).
+
+            Medidas Relativas:
+            em (princípal), ex, rem, vw, vh, %
+            -------------------------------------------------------------
+            16px geralmente = 1em
+            use px e em para font-size (de preferência em).
+            -------------------------------------------------------------
+            width = largura
+            height = altura
+            weight = peso da fonte {
+                lighter, normal, bold, bolder ou um número de 100 a 900.
+            }
+            use control + spacebar para ver os itens disponíveis em uma tag
+            */
+            font-size: 1em;
+        }
+
+        h1 {
+            /*
+            método convencional:
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+            font-size: 3em;
+            font-style: italic;
+
+            shorthand font: (uma mãozinha, facilitada), (para ocupar menas linhas).
+            ordem: - font style - font-weight - font-size - font-family
+            */
+            font: italic bold 3em 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quidem, officia quaerat nihil ab repellat. Maiores dignissimos, quas minus facilis tempore ipsam beatae nostrum, quod reprehenderit repellendus vero molestias optio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis quo quae veniam rerum perferendis quisquam reprehenderit corporis velit magnam sapiente eligendi ea, quia sint! Temporibus quia consequatur repellendus velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consectetur, harum voluptatum, asperiores consequatur repudiandae repellat officiis molestiae dolorem recusandae ullam! Mollitia hic officiis a natus quia provident eaque dolores?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni harum enim sint accusantium voluptatibus similique voluptatum, tenetur eum, non saepe at quia ipsum quos quae aspernatur quidem exercitationem fugit veritatis!</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem beatae quaerat exercitationem magni provident veniam, mollitia rerum eum eaque nemo, officia voluptas perspiciatis aspernatur ut optio dolore! Hic, placeat?</p>
+</body>
+</html>

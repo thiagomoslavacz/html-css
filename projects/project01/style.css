@@ -1,0 +1,329 @@
+
+@charset "UFT-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
+
+@keyframes colorChange {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+@keyframes swingAnimation {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(20px);
+    }
+}
+
+@keyframes colorChangeAnimation {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes scaleAnimation {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: lightgray;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #333;  /* color of the scroll thumb */
+    border: 1px solid gray;  /* creates padding around scroll thumb */
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: darkgray;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #fff;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 2em;
+}
+
+main {
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+#cab1 {
+    font-family: 'Roboto Mono', monospace;
+    background: #fff;
+    margin-top: 3em;
+    margin-bottom: 7em;
+    padding-bottom: 45px;
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 1px black;
+}
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 50px;
+    cursor: pointer;
+    display: none; /* Inicialmente oculto */
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+#img-profile {
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #333;
+    border-radius: 150px;
+}
+
+.cont {
+    flex: 1;
+    margin-left: 20px;
+    font-family: monospace;
+    font-size: 2em;
+    text-align: center;
+}
+
+.cont p {
+    margin: 0;
+}
+
+.frase1:hover::after {
+    content: '🌎';
+}
+
+.frase1 {
+    position: relative;
+    font-size: 1.5em;
+    animation: swingAnimation 2s ease-in-out infinite;
+    display: inline-block;
+}
+
+.frase1.animation2 {
+    animation: colorChangeAnimation 3s ease-in-out infinite;
+}
+
+.frase1.animation3 {
+    animation: scaleAnimation 3s ease-in-out infinite;
+}
+
+.hd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.material-symbols-outlined {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.world1 {
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 40px;
+}
+
+.world1:hover {
+    font-size: 1.5em;
+    letter-spacing: 10px;
+    background: linear-gradient(90deg, red, blue, green, orange, purple); /* Cores do degradê */
+    background-size: 500% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: colorChange 4s infinite linear;
+    display: inline-block;
+}
+
+#cab2 {
+    background: #fff;
+    padding: 10px;
+}
+
+#hd {
+    text-align: center;
+    background: lightgray;
+}
+
+div > h1 {
+    font-size: 50px;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav > a { 
+    margin-right: 1em;
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 10px 10px 10px;
+    margin-bottom: 5px;
+}
+
+nav > a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+#assuntos {
+    background: lightgray;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.asd:hover {
+    text-decoration: underline;
+}
+
+.asd {
+    text-decoration: none;
+}
+
+aside {
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+aside > p {
+    margin: 0;
+}
+
+#noticias {
+    background: lightgray;
+    padding: 5px;
+}
+
+article > p {
+    width: 50%;
+    font-family: Arial;
+    font-size: 20px;
+    text-align: justify;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.images {
+    flex: 0 0 30%; /* Defina a largura desejada para o contêiner de imagens */
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.images img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar 100% do contêiner .images */
+}
+
+article > * {
+    flex: 1 1 65%; /* Ajusta a largura do texto, ajuste conforme necessário */
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo de cada elemento dentro do article */
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    border: 3px solid black;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.final {
+    width: 35%;
+}
+
+.social > ul {
+    padding-top: 30px;
+    list-style: none;
+}
+
+li {
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+li > a:hover {
+    text-decoration: underline;
+}
+
+li > a:visited {
+    color: #fff;
+}
+
+li > a:active {
+    color: #a3a3a3;
+}
+
+.code {
+    border: 3px solid black;
+    margin-left: 7em;
+}

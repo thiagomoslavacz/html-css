@@ -1,0 +1,21 @@
+@charset "UFT-8";
+
+body {
+    background: lightskyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    color: darkblue;
+    background: blue;
+}
+
+h2 {
+    background-color: yellowgreen;
+    color: darkgreen;
+}
+
+p {
+    text-align: justify;
+}
