@@ -3,36 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imagens de Fundo</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
-            margin: 0;
             height: 100vh;
             font-family: Arial, Helvetica, sans-serif;
+            /*
             background-color: black;
             background-image: url('images/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;
+            */
+
+            /* shorthand - background
+                color > image > position > [size] > attachment
+            */
+
+            background: black url('images/wallpaper002.jpg') center center fixed;
+            background-size: cover;
         }
 
         h1 {
-            font-size: 1.9em;
+            font-size: 2.1em;
+            text-align: center;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 500px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
             border-radius: 15px;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.289);
         }
     </style>
 </head>
 <body>
     <main>
         <h1>Teste de Imagens de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dicta tempora reprehenderit ut esse in. Iure illum, possimus neque placeat alias sed ipsam reprehenderit, eligendi totam laboriosam, consequatur ipsum animi?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, cumque! Vero itaque quisquam doloremque eius dolor, nihil accusantium et suscipit sunt deserunt, nostrum molestias? Laborum rem aliquid enim cumque quis!Lorem</p>
     </main>
 </body>
