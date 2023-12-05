@@ -5,7 +5,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 header {
@@ -42,7 +41,7 @@ header a:hover {
 
 p {
     font-family: 'Sriracha', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-left: 15px;
     margin-bottom: 40px
 }
@@ -57,7 +56,7 @@ div.paralax01,
 div.paralax02 {
     min-height: 500px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -76,7 +75,7 @@ div.paralax02 {
 .p-fundo {
     background-color: rgba(0, 0, 0, 0.352);
     margin: 0;
-    width: 320px;
+    width: 410px;
     padding: 15px 0px 15px 15px;
 }
 
