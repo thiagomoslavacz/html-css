@@ -83,7 +83,7 @@ nav > a:hover {
     transition: 0.2s;
 }
 
-nav > a:not(hovet) {
+nav > a:not(hover) {
     transition: 0.2s;
 }
 
