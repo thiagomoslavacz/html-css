@@ -84,10 +84,14 @@
             color: #0e970e;
         }
 
-        td:nth-child(even) {
+        tbody td:nth-child(even) {
             text-align: right;
         }
 
+        tfoot td {
+            text-align: center;
+        }
+        
         img {
             width: 22px;
             height: 15px;
@@ -250,7 +254,7 @@
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td><strong>173.469.327</strong></td>
+                <td colspan="2"><strong>173.469.327</strong></td>
             </tr>
         </tfoot>
     </table>
