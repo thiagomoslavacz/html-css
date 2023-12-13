@@ -34,5 +34,12 @@ section#cell-phone {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 268px;
+    height: 471px;
 }
