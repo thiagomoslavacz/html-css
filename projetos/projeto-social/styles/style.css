@@ -43,3 +43,24 @@ iframe#tela {
     width: 268px;
     height: 471px;
 }
+
+section#social {
+    text-align: right;
+}
+
+section#social img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+section#social img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    transform: scale(115%);
+}
+
+section#social img:active {
+    transform: scale(100%);
+}
