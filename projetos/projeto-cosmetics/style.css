@@ -107,6 +107,10 @@ header {
 
 /* ----------------- Main ----------------- */
 
+header, main {
+    width: 100%;
+}
+
 main {
     background-color: white;
     margin: auto;
