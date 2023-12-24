@@ -13,7 +13,6 @@
 * {
     margin: 0;
     padding: 0;
-    outline: none;
     box-sizing: border-box;
 }
 
@@ -26,11 +25,13 @@ body {
 /* ------------------ Header --------------------- */
 
 header {
-    min-height: 525px;
-    background: url('images/cosmetic13.jpg') no-repeat 100%;
+    min-height: 325px;
+    height: 75vh;
+    background: url('images/cosmetic13.jpg') no-repeat center;
     background-size: cover;
     color: white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
 
 .links {
@@ -87,18 +88,21 @@ header {
 }
 
 .header-head {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header-head .title {
-    font-size: 5em;
-    margin-top: 100px;
-    margin-right: 200px;
+    font-size: 3em;
+    
 }
 
 .header-head .description {
-    max-width: 400px;
+    width: 400px;
     margin: auto;
 }
 
@@ -108,7 +112,6 @@ main {
     background-color: white;
     margin: auto;
     margin-top: 5em;
-    min-width: 300px;
     max-width: 1200px;
     padding-bottom: 50px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
@@ -123,7 +126,13 @@ main {
 .gallery02 {
     display: flex;
     align-items: center;
+    flex-direction: column;
     padding: 50px 0;
+}
+
+.gallery01 img,
+.gallery02 img {
+    margin-bottom: 20px;
 }
 
 .woman {
@@ -142,18 +151,12 @@ main {
 .gallery02 p {
     color: white;
     background-color: rgba(0, 0, 0, 0.796);
-    max-width: 400px;
-    height: 210px;
-    padding: 0 20px;
-    margin: 0 50px;
+    padding: 20px;
+    margin: 50px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Zilla Slab', serif;
-}
-
-.gallery02 {
-    flex-direction: row-reverse;
 }
 
 .main-gallery > p {
@@ -180,6 +183,7 @@ main {
 .all-c {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .aside-gallery h2 {
@@ -205,4 +209,32 @@ main {
 
 .cosmetics:nth-child(even) {
     margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-head .title {
+        font-size: 4em;
+    }
+
+    .gallery01 {
+        flex-direction: row;
+    }
+
+    .gallery02 {
+        flex-direction: row-reverse;
+    }
+
+    .gallery01 p {
+        margin-left: 50px;
+    }
+
+    .gallery02 p {
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header-head .title {
+        font-size: 5em;
+    }
 }
