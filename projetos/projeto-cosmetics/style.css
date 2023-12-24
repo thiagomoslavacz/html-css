@@ -98,7 +98,6 @@ header {
 
 .header-head .title {
     font-size: 3em;
-    color: aqua;
 }
 
 .header-head .description {
@@ -118,8 +117,8 @@ main {
 }
 
 .main-gallery {
-    margin: auto    ;
-    width: 70%;
+    margin: auto;
+    width: 50vw;
 }
 
 .gallery01,
@@ -172,7 +171,7 @@ main {
 
 .aside-gallery {
     margin: auto;
-    width: 90vw;
+    max-width: 90vw;
     margin-top: 5em;
     margin-bottom: 5em;
     background-color: #f4eeed;
