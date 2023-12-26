@@ -30,8 +30,23 @@ Telas Grandes: acima de 1200px
         text-shadow: none;
         color: black;
     }
-}
 
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: block; }
+    #pc { display: none; }
+    #tv { display: none; }
+
+    main h1,
+    main p {
+        display: block;
+        text-align: center;
+    }
+
+    main p::after {
+        content: 'Esta versão impressa está colada na parede do meu quarto!!! 😁';
+    }
+}
 /*
     Não é necessário o @media screen para celulares pois usamos Mobile First, mas criarei um apenas para o h1.
 */
