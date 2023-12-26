@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+/* Versão para outras mídias */
+
+/* Typical Device Breakpoints:
+(em 26/12/2023, 19:22)
+
+------------------------------------
+
+Telas Pequenas: de 320px até 480px
+Celular: de 480px até 768px
+Tablet: de 768px até 1025px
+Desktop: 1025px até 1200px
+Telas Grandes: acima de 1200px
+*/
+
+@media print { /* IMPRESSORA */
+    body {
+        background-image: url('../images/back-print.jpg'); /* DESNECESSÁRIO */
+        margin-top: 50%;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    main h1::after {
+        content: 'Você está imprimindo!';
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+}
+
+/*
+    Não é necessário o @media screen para celulares pois usamos Mobile First, mas criarei um apenas para o h1.
+*/
+
+@media screen and (max-width: 768px) {
+    main h1::after {
+        content: 'Você está em um Celular!';
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) { /* TABLETS */
+    body {
+        background-image: url('../images/back-tablet.jpg');
+    }
+
+    main h1::after {
+        content: 'Você está em um Tablet!';
+    }
+
+    #phone { display: none; }
+    #tablet { display: block; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url('../images/back-pc.jpg');
+    }
+
+    main {
+        width: 600px;
+    }
+
+    main h1::after {
+        content: 'Você está em um Desktop!';
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: block; }
+    #tv { display: none; }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url('../images/back-tv.jpg');
+    }
+
+    main {
+        width: 700px;
+    }
+
+    main h1::after {
+        content: 'Você está em uma tela grande!';
+    }
+
+    #phone { display: none; }
+    #tablet { display: none; }
+    #print { display: none; }
+    #pc { display: none; }
+    #tv { display: block; }
+}
