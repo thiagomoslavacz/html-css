@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: steelblue;
+}
+
+header {
+    background-color: lightgray;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 2.3rem;
+}
+
+span#burguer {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+span#burguer:hover {
+    transform: scale(110%);
+    background-color: white;
+    color: black;
+}
+
+.nav {
+    background-color: gray;
+    text-align: center;
+    display: none;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+.nav li {
+    font-size: 1.3rem;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-top: 2px solid lightgray;
+    display: block;
+    transition: all .2s;
+}
+
+.nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-decoration: underline;
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+main h2 {
+    padding: 20px 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    text-indent: 30px;
+    line-height: 1.6rem;
+}
