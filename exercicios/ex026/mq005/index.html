@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/media-querie.css">
     <title>Media Querie</title>
 </head>
 <body>
     <header>
-        <div class="header">
-            <h1>Meu Site</h1>
-            <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <div class="container">
+            <div class="head">
+                <h1>Meu Site</h1>
+                <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+            </div>
+            <nav id="idNav" class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Section</a></li>
+                    <li><a href="#">Template</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav id="idNav" class="nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Section</a></li>
-                <li><a href="#">Template</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section>
@@ -41,9 +44,9 @@
     <script>
         function clickMenu() {
             if (idNav.style.display == 'block') {
-                idNav.style.display = 'none'
+            idNav.style.display = 'none';
             } else {
-                idNav.style.display = 'block'
+                idNav.style.display = 'block';
             }
         }
     </script>

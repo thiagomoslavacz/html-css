@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints:
+(em 26/12/2023, 19:22)
+
+------------------------------------
+
+Telas Pequenas: de 320px até 480px
+Celular: de 480px até 768px
+Tablet: de 768px até 1025px
+Desktop: 1025px até 1200px
+Telas Grandes: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav {
+        display: block;        
+        background: none;
+        padding: 20px;
+    }
+
+    .nav ul {
+        display: flex;
+        gap: 30px;
+    }
+
+    .nav a {
+        position: relative;
+        border: none;
+        color: black;
+    }
+
+    .nav a:hover {
+        background: none;
+    }
+
+    .nav a:hover::before {
+        position: absolute;
+        content: '';
+        width: 40px;
+        height: 2px;
+        bottom: 10px;
+        left: 12px;
+        background-color: black;
+    }
+
+    main {
+        max-width: 768px;
+    }
+}
