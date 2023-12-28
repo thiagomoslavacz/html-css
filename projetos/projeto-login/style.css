@@ -1,0 +1,51 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #733702;
+    --secondary-color: #F2F2E9;
+
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    font-family: var(--font-poppins);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    margin: auto;
+}
+
+.cardbox-login {
+    padding: 75px;
+}
+
+.cardbox-content h1 {
+    font-size: 2rem;
+}
+
+.form-password {
+    position: relative;
+}
+
+.form-password span#eye {
+    position: absolute;
+    left: 167px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.img-content img {
+    width: 100%;
+    height: auto;
+}
