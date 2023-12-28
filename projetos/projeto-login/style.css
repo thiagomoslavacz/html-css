@@ -20,10 +20,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-}
-
-.container {
-    margin: auto;
+    overflow: hidden;
 }
 
 .cardbox-login {
@@ -31,7 +28,44 @@ body {
 }
 
 .cardbox-content h1 {
+    position: relative;
     font-size: 2rem;
+    margin-bottom: 5px;
+
+}
+
+.cardbox-content h1::before {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 4px;
+    top: 2px;
+    background-color: var(--primary-color);
+}
+
+/* FORMULÁRIO */
+
+.cardbox-form .form-email,
+.cardbox-form .form-password {
+    display: flex;
+    gap: 8px;
+}
+
+.form-email,
+.form-password {
+    margin: 20px 0;
+}
+
+.cardbox-form .form-email input,
+.cardbox-form .form-password input {
+    width: 100%;
+    padding: 5px;
+}
+
+.cardbox-form .form-email label,
+.cardbox-form .form-password label {
+    display: flex;
+    align-items: center;
 }
 
 .form-password {
@@ -40,10 +74,22 @@ body {
 
 .form-password span#eye {
     position: absolute;
-    left: 167px;
-    top: 8px;
+    left: 322px;
+    top: 5px;
     cursor: pointer;
 }
+
+.form-submit button {
+    width: 100%;
+    padding: 8px 0;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+/* IMAGEM */
 
 .img-content img {
     width: 100%;
