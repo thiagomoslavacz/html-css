@@ -24,14 +24,19 @@ body {
 }
 
 .cardbox-login {
-    padding: 75px;
+    padding: 50px;
+    height: 50vh;
+    margin-bottom: 35px;
 }
 
 .cardbox-content h1 {
     position: relative;
-    font-size: 2rem;
     margin-bottom: 5px;
+    font-size: 1.6rem;
+}
 
+.cardbox-content p {
+    font-size: 0.9rem;
 }
 
 .cardbox-content h1::before {
@@ -39,7 +44,6 @@ body {
     content: '';
     width: 60px;
     height: 4px;
-    top: 2px;
     background-color: var(--primary-color);
 }
 
@@ -72,11 +76,10 @@ body {
     position: relative;
 }
 
-.form-password span#eye {
-    position: absolute;
-    left: 322px;
-    top: 5px;
-    cursor: pointer;
+.form-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-submit button {
@@ -91,7 +94,12 @@ body {
 
 /* IMAGEM */
 
+.img-content {
+    height: 50vh;
+    
+}
+
 .img-content img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
