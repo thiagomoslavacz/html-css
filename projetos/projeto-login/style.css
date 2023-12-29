@@ -15,23 +15,34 @@
     box-sizing: border-box;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
 /* CONTAINER */
 
 .container {
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 
 .cardbox-login {
     padding: 55px;
-    flex: 1;
+    height: 50vh;
 } 
 
 /* CONTEÚDO */
 
 .login-content h1 {
     position: relative;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+}
+
+.login-content span.title {
+    color: var(--primary-color);
 }
 
 .login-content h1::before {
@@ -65,6 +76,7 @@
 .login-form .form-password input {
     width: 100%;
     padding: 5px;
+    outline: none;
 }
 
 .login-form .form-email label,
@@ -95,43 +107,54 @@
     transform: scale(95%);
 }
 
-/* IMAGEM */
+/* FOOTER */
 
-.footer-content {
+.cardbox-footer {
     background-color: var(--primary-color);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 50vh;
 }
 
-.footer-content p {
-    padding: 10px 0;
+.cardbox-footer p {
+    padding: 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4px;
+    gap: 8px;
 }
 
-.footer-content a {
+.cardbox-footer a {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s;
 }
 
-.footer-content a:hover {
+.cardbox-footer a.link:hover {
     background-color: #894102;
-    padding: 10px;
+    border: 1px solid white;
     border-radius: 10px;
+    padding: 10px;
 }
 
-.footer-content img.instagram {
-    color: white;
-    width: 30px;
+.cardbox-footer a.link:active {
+    transform: scale(95%);
 }
-.footer-content img.coffee {
-    width: 100%;
-    height: auto;
+
+/* IMAGENS */
+
+.cardbox-footer a.instagram img {
+    color: white;
+    width: 25px;
+}
+
+.footer-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-image img.coffee {
+    max-width: 90vw;
 }
 
 /* MEDIAS QUERIES */
@@ -139,5 +162,21 @@
 @media screen and (min-width: 768px) {
     .cardbox-login {
         padding: 60px 120px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardbox-login {
+        width: 50vw;
+    }
+
+    .cardbox-footer {
+        width: 50vw;
     }
 }
