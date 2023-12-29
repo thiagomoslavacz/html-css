@@ -18,7 +18,6 @@
 body {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 
 /* CONTAINER */
@@ -26,8 +25,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-}
+    }
 
 .cardbox-login {
     padding: 60px;
@@ -105,11 +103,21 @@ body {
 
 .cardbox-img {
     background-color: var(--primary-color);
+    max-width: 100%;
+    max-height: 100vh;
     display: flex;
-    height: 100vh;
+    overflow-x: hidden;
 }
 
 .cardbox-img img {
     width: 100%;
     height: auto;
+}
+
+/* MEDIAS QUERIES */
+
+@media screen and (min-width: 768px) {
+    .cardbox-login {
+        padding: 60px 120px;
+    }
 }
