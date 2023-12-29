@@ -26,7 +26,6 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
 
 .cardbox-login {
@@ -111,49 +110,54 @@ body {
 
 .cardbox-footer {
     background-color: var(--primary-color);
+    width: 100vw;
     height: 50vh;
 }
 
-.cardbox-footer p {
-    padding: 15px 0;
+.footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.cardbox-footer a {
+.footer-content p {
+    padding: 15px 0;
+}
+
+.footer-content a {
     color: white;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     transition: all 0.3s;
 }
 
-.cardbox-footer a.link:hover {
+.footer-content a.content-link:hover {
     background-color: #894102;
     border: 1px solid white;
     border-radius: 10px;
     padding: 10px;
 }
 
-.cardbox-footer a.link:active {
+.footer-content a.content-link:active {
     transform: scale(95%);
 }
 
-/* IMAGENS */
-
-.cardbox-footer a.instagram img {
+.footer-content a.content-instagram img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     width: 25px;
 }
 
-.footer-image {
+.footer-img {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.footer-image img.coffee {
+.footer-img img.img-coffee {
     max-width: 90vw;
 }
 
@@ -172,11 +176,29 @@ body {
         align-items: center;
     }
 
-    .cardbox-login {
+    .cardbox-login,
+    .cardbox-footer {
         width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .cardbox-footer {
-        width: 50vw;
+        gap: 10px;
+    }
+
+    .footer-content {
+        gap: 10px;
+    }
+
+    .footer-content p {
+        font-size: 1.2rem;
+        padding: 15px 0;
+    }
+
+    .footer-img img.img-coffee {
+        width: 80%;
     }
 }
