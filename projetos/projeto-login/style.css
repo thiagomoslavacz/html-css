@@ -158,10 +158,43 @@ body {
 }
 
 .footer-img img.img-coffee {
-    max-width: 90vw;
+    max-width: 90%;
 }
 
 /* MEDIAS QUERIES */
+
+@media print {
+    .cardbox-login {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardbox-footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cardbox-login,
+    .cardbox-footer {
+        width: 50vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .cardbox-footer {
+        gap: 10px;
+    }
+}
 
 @media screen and (min-width: 768px) {
     .cardbox-login {
