@@ -26,6 +26,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 .cardbox-login {
@@ -39,16 +40,16 @@ body {
     font-size: 1.7rem;
 }
 
-.cardbox-content p {
-    font-size: 0.9rem;
-}
-
 .cardbox-content h1::before {
     position: absolute;
     content: '';
     width: 60px;
     height: 4px;
     background-color: var(--primary-color);
+}
+
+.cardbox-content p {
+    font-size: 0.9rem;
 }
 
 /* FORMULÁRIO */
@@ -78,11 +79,6 @@ body {
     align-items: center;
     cursor: pointer;
 }
-
-.form-password {
-    position: relative;
-}
-
 
 .form-submit button {
     width: 100%;
@@ -116,5 +112,4 @@ body {
 .cardbox-img img {
     width: 100%;
     height: auto;
-    object-fit: cover;
 }
