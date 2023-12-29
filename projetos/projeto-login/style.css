@@ -16,21 +16,20 @@
 }
 
 body {
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     height: 100vh;
-    overflow: hidden;
 }
 
 .cardbox-login {
     padding: 50px;
-    height: 50vh;
-}
+} 
 
 .cardbox-content h1 {
     position: relative;
-    margin-bottom: 5px;
     font-size: 1.6rem;
 }
 
@@ -52,12 +51,8 @@ body {
 .cardbox-form .form-password {
     display: flex;
     gap: 8px;
-}
-
-.form-email,
-.form-password {
-    margin: 20px 0;
-}
+    margin: 25px 0;
+}   
 
 .cardbox-form .form-email input,
 .cardbox-form .form-password input {
@@ -75,11 +70,6 @@ body {
     position: relative;
 }
 
-.form-submit {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .form-submit button {
     width: 100%;
@@ -93,12 +83,13 @@ body {
 
 /* IMAGEM */
 
-.img-content {
-    height: 50vh;
-    
+.cardbox-img {
+    background-color: var(--primary-color);
+    flex: 1;
+    display: flex;
 }
 
 .img-content img {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
