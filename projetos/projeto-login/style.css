@@ -15,30 +15,26 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 100vw;
-    height: 100vh;
-}
-
 /* CONTAINER */
 
 .container {
     display: flex;
     flex-direction: column;
-    }
+}
 
 .cardbox-login {
-    padding: 60px;
+    padding: 55px;
+    flex: 1;
 } 
 
 /* CONTEÚDO */
 
-.cardbox-content h1 {
+.login-content h1 {
     position: relative;
     font-size: 1.7rem;
 }
 
-.cardbox-content h1::before {
+.login-content h1::before {
     position: absolute;
     content: '';
     width: 60px;
@@ -46,33 +42,33 @@ body {
     background-color: var(--primary-color);
 }
 
-.cardbox-content p {
+.login-content p {
     font-size: 0.9rem;
 }
 
 /* FORMULÁRIO */
 
-.cardbox-form .form-email,
-.cardbox-form .form-password {
+.login-form .form-email,
+.login-form .form-password {
     display: flex;
     gap: 8px;
     margin: 20px 0;
     transition: all 0.3s;
 }
 
-.cardbox-form .form-email:hover,
-.cardbox-form .form-password:hover {
+.login-form .form-email:hover,
+.login-form .form-password:hover {
     transform: scale(105%);
 }
 
-.cardbox-form .form-email input,
-.cardbox-form .form-password input {
+.login-form .form-email input,
+.login-form .form-password input {
     width: 100%;
     padding: 5px;
 }
 
-.cardbox-form .form-email label,
-.cardbox-form .form-password label {
+.login-form .form-email label,
+.login-form .form-password label {
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -101,15 +97,39 @@ body {
 
 /* IMAGEM */
 
-.cardbox-img {
+.footer-content {
     background-color: var(--primary-color);
-    max-width: 100%;
-    max-height: 100vh;
     display: flex;
-    overflow-x: hidden;
+    flex-direction: column;
+    align-items: center;
 }
 
-.cardbox-img img {
+.footer-content p {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-content a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.3s;
+}
+
+.footer-content a:hover {
+    background-color: #894102;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.footer-content img.instagram {
+    color: white;
+    width: 30px;
+}
+.footer-content img.coffee {
     width: 100%;
     height: auto;
 }
